@@ -133,6 +133,16 @@ body {
     font-weight: var(--p-regular);
 }
 
+body {
+    background-color: #222; /* Dark background for dark mode */
+    color: #fff; /* White text for dark mode */
+  }
+  
+  h1, h2, p { /* Adjust selectors for other text elements */
+    color: #eee; /* Lighter text color for readability */
+  }
+  
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     body {
         overflow: hidden;
@@ -17115,6 +17125,25 @@ div#featured-project-carousel {
     background: linear-gradient(to right bottom, #212428, #16181c);
     opacity: 0;
     z-index: -1;
+}
+
+.social-share {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* This removes the default list styling */
+    padding: 0; /* This removes the default padding */
+    margin: 0; /* This ensures the list does not have a default margin */
+  }
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-style-2 .social-icone-wrapper .social-share li a:hover {
