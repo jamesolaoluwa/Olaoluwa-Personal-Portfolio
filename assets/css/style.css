@@ -17313,6 +17313,14 @@ div#featured-project-carousel {
     width: 100%;
 }
 
+.specific-image{
+    width: 330px !important;
+    height: 248px !important;
+    object-fit: cover !important;
+    object-position: 50% 20% !important;
+
+}
+
 @media only screen and (max-width: 479px) {
     .rn-portfolio .inner .thumbnail a,
     .rn-blog .inner .thumbnail a {
