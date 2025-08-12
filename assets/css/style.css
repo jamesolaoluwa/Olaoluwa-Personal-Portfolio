@@ -19168,6 +19168,36 @@ body.white-version {
     color: var(--color-white);
 }
 
+/* Awards tab: kill the top gap */
+#interview .personal-experience-inner {
+  margin-top: 20 !important;
+  padding-top: 0 !important;
+}
+
+/* Some themes add top padding/min-height inside .content */
+#interview .personal-experience-inner .content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  min-height: 0 !important;
+}
+
+/* If the right column was pulled up with a utility like mt--60, neutralize it */
+#interview .personal-experience-inner .row > [class*="col-"] {
+  margin-top: 0 !important;
+}
+
+/* Make sure both columns align at the top */
+#interview .personal-experience-inner .row {
+  align-items: flex-start;
+}
+
+/* If your template draws a decorative separator with ::before/::after, turn it off here */
+#interview .personal-experience-inner::before,
+#interview .personal-experience-inner::after {
+  content: none !important;
+}
+
+
 .white-version .rn-resume-area .progress-charts .progress {
     background: #dce1e4;
     box-shadow: none;
@@ -19908,5 +19938,24 @@ body.white-version {
 .white-version .slider-style-6 .cd-headline span {
     color: var(--color-white) !important;
 }
+
+/* Extracurricular → Leadership/Society: normalize column top spacing */
+#education .personal-experience-inner .row {
+  align-items: flex-start;              /* top-align columns */
+}
+
+#education .personal-experience-inner .row > [class*="col-"] {
+  margin-top: 0 !important;             /* kill any mt_md-- / mt_sm-- offsets */
+  padding-top: 0 !important;
+}
+
+/* If your theme defines mt_md--60 / mt_sm--60, neutralize them here */
+@media (max-width: 991.98px) {
+  .mt_md--60 { margin-top: 0 !important; }
+}
+@media (max-width: 767.98px) {
+  .mt_sm--60 { margin-top: 0 !important; }
+}
+
 
 /*# sourceMappingURL=../maps/style.css.map */
